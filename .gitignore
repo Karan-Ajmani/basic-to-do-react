@@ -62,3 +62,5 @@ typings/
 
 # babel
 .babelrc
+
+_site/

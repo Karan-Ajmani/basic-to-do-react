@@ -1,7 +1,85 @@
-<html>
-    <body>
-        <div id="root">
-        <script src="bundle.js"></script>
-        </div>
-    </body>
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Plain Description -->
+	<title>Karan Ajmani</title>
+	<meta name="description" content="Working on random stuff. Shoutout to Daniel Shiffman.">
+	<link rel="icon" type="image/png" href="/favicon.png">
+	
+	<!-- CSS & fonts -->
+	<link rel="stylesheet" href="css/app.css">
+	<!-- Put your fonts here -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700|PT+Sans:400">
+
+	<!-- Put your scripts here -->
+	<script src="https://use.fontawesome.com/0f8979ed62.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.js"></script>
+
+	<!-- Put your GA object here -->
+
+</head>
+	
+	<body>
+		<!--[if lt IE 8]>
+		<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+				
+		<!-- fulltitle: This overrides the default page title, which is " | Karan Ajmani" -->
+<!-- excerpt: If this isn't set, it'll pull your Random Work for meta description-->
+
+		<div class="wrapper">
+			<div class="site">
+				<div id="headerWrapper">
+					<header id="header">
+						<div id="headerInfo">
+							<!-- <h1>Karandeep Ajmani</h1> -->
+							<img src="img/logo.png" height=60></img>
+						</div>
+						<div class="contact-bar">
+							<a class="contact-link" href="https://github.com/Karan-Ajmani"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
+							<a class="contact-link" href="https://linkedin.com/in/karan-ajmani-72808b28"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a>	
+							<a class="contact-link" href="https://twitter.com/karanajmani"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
+						</div>
+					</header>
+				</div>
+				<div class="col-12">
+					<div class="col-1"></div>
+					<div class="col-10">
+						<div class="instructions">
+					    	<ul>
+					    		<li>Add a task</li>
+								<li>Keeps count of pending tasks</li>
+								<li>Click on a task to mark it complete</li>
+					    	</ul>
+					    </div>
+						<div id="root" class="to-do-list">
+					        <script src="bundle.js"></script>
+					    </div>
+					</div>
+					<div class="col-1"></div>
+				</div>
+			</div>
+		</div>
+
+
+<script type="text/javascript">
+window.onkeydown = function(e) { 
+  return !(e.keyCode == 32 && e.target == document.body);
+}; 
+</script>
+		
+	</body>
 </html>
+
